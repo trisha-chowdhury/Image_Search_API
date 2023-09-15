@@ -5,16 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Image Search</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
-    <h1>Image Seaching App</h1>
-    <form id="search-form">
-        <input type="text" id="search-input" placeholder="Search for Images">
-        <button>Search</button>
-    </form>
-    <div id="search-result"></div>
-    <button id="show-more-button">Show More</button>
-
-    <script src="script.js"></script>
+    <div class="lightbox">
+        <div class="wrapper">
+            <header>
+                <div class="photographer">
+                    <i class="uil uil-camera"></i>
+                    <span></span>
+                </div>
+                <div class="buttons">
+                    <i class="uil uil-import"></i>
+                    <i class="close-icon uil uil-times"></i>
+                </div>
+            </header>
+            <div class="preview-img">
+                <div class="img"><img src="" alt="preview-img"></div>
+            </div>
+        </div>
+    </div>
+    <section class="search">
+        <img src="https://images.unsplash.com/photo-1692891259833-9832c3ca751e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw5OXx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+        alt="">
+        <div class="content">
+            <h1>Image Search</h1>
+            <p>Place where you can search and download images</p>
+            <div class="search-box">
+                <i class="uil uil-search"></i>
+                <input type="text" placeholder="search images">
+            </div>
+        </div>
+    </section>
+    <section class="gallery">
+        <ul class="images"></ul>
+        <button class="load">Show More</button>
+    </section>
 </body>
 </html>
